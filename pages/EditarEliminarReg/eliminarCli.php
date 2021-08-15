@@ -3,13 +3,12 @@
     $user    = "root";
     $pass    = "";
     $db_name = "lavado_autos";
-
-    $con = mysqli_connect($host,$user,$pass);
-    mysqli_select_db ($con,$db_name);
+    $connection = mysqli_connect($host, $user,$pass, $db_name);
 
     $id=$_GET['id'];
-    $eliminar = "DELETE FROM CLIENTE WHERE cli_cedula='$id'";
-    $resultado = mysqli_query($con,$eliminar);
+    $eliminar = "DELETE FROM cliente WHERE cli_cedula='$id'";
+    $resultado = mysqli_query($connection,$eliminar);
+
 
     if($resultado){
         header("Location:../cliente.php");
