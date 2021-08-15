@@ -131,6 +131,6 @@
     <script src="../lavado_autos/js/main.js" type="text/javascript"></script>
 </body>
 <footer class="footer">
-        <p class="p_footer">© 2021 por DevCorp</p>
+        <p class="p_footer">© 2021 por Esteban Moyolema</p>
 </footer>
 </html>
