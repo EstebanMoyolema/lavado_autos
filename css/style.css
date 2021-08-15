@@ -1,0 +1,291 @@
+body, html {
+    height: 100%;
+    }
+    body{
+        margin:  0;
+        padding: 0;
+        background-color: #000000;
+    }
+    * {
+    font-family: muli,sans-serif;
+    box-sizing: border-box;
+    }
+    .header {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0px;
+    }
+    h1{
+        color: #FFFFFF;
+        font-family: muli,sans-serif;
+        position: absolute;
+        font-size: 45px;
+        text-align: center;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .title-head{
+        text-decoration: none;
+    }
+    .logo {
+        position: absolute;
+        width: 100%;
+        align-content: center;
+    }
+    .image_main{
+        position: relative;
+        width: 100vw;
+        height: 75vh;
+        overflow:hidden;
+        margin-top: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer{
+        height: 10vh;
+    }
+    .botones_main{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    }
+    .botoncli{
+        background-color: rgba(127, 140, 141, .8);
+        border-radius: 25px;
+        height: 75px;
+        width: 400px;
+        margin: 50px 0px 25px 0px;
+    }
+    .botonpro{
+        background-color: rgba(127, 140, 141, .8);
+        border-radius: 25px;
+        height: 75px;
+        width: 400px;
+        margin: 50px 0px 25px 0px;
+    }
+    .botonemp{
+        background-color: rgba(127, 140, 141, .8);
+        border-radius: 25px;
+        height: 75px;
+        width: 400px;
+        margin: 50px 0px 25px 0px;
+    }
+    p{
+        color: white;
+        font-size: 15px;
+    }
+    .p_footer{
+        color: #FFFFFF;
+        font-family: muli,sans-serif;
+        position: absolute;
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+    }
+    .error404{
+        color: white;
+        font-size: 20px;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+    /*PLantilla clientes*/
+    .agregarCliente{
+        color: rgba(0,255,0,0.3);
+        display: flex;
+        width: 100%;
+    }
+    .cliente_Cabezera{
+        margin-left: 20px;
+        color:#FFFFFF;
+        font-weight: bold;
+        font-size: 30px;
+        width: 20%;
+    }
+    .btnAgregarCliente{
+        margin-top: 20px;
+        width: 100px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    
+    @media only screen and (max-width: 636px) {
+        .botoncli{
+            background-color: rgba(127, 140, 141, .8);
+            border-radius: 25px;
+            height: 65px;
+            width: 250px;
+            margin: 50px 0px 25px 0px;
+        }
+        .botonpro{
+            background-color: rgba(127, 140, 141, .8);
+            border-radius: 25px;
+            height: 65px;
+            width: 250px;
+            margin: 50px 0px 25px 0px;
+        }
+        .botonemp{
+            background-color: rgba(127, 140, 141, .8);
+            border-radius: 25px;
+            height: 65px;
+            width: 250px;
+            margin: 50px 0px 25px 0px;
+        }
+    }
+    /*POPUP*/
+    .overlay{
+        background: rgba(0,0,0, .8);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+    .overlay.active {
+        visibility: visible;
+    }
+
+.popup{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+}
+    
+    .popup .btn-cerrar-popup{
+        font-size: 16px;
+        line-height: 16px;
+        display: block;
+        text-align: right;
+        color: #BBBBBB;
+        transition: .3s ease all;
+    }
+    .popup h3 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+.btn_verTabla{
+    height: 60px;
+    width: 60px;
+}
+.botones_main button{
+    margin: 15px 15px 15px 15px;
+}
+.botonReg{
+    background-color: rgba(127, 140, 141, .8);
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 50px 0px 25px 0px;
+}
+.botonNue{
+    background-color: rgba(127, 140, 141, .8);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 50px 0px 25px 0px;
+}
+.botonEst{
+    background-color: rgba(127, 140, 141, .8);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 50px 0px 25px 0px;
+}
+
+    
+    .popup form .contenedor-inputs input{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 50px;
+        line-height: 52px;
+        font-size: 15px;
+        text-align: center;
+        border: 1px solid #BBBBBB;
+    }
+    .popup form .btn-submit{
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+        color: #fff;
+        background: #5E7DE3;
+        border-radius: 3px;
+    }
+    
+.frame{
+    margin: 20px;
+    background: #f8f8f8;
+    height: 550px;
+    width:97%;
+    border:1px solid black;
+}
+.frameProducto{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+iframe{
+    color: white;
+}
+.nueOrden{
+    font-size: 20px;
+    color: #000000;
+}
+.selector{
+    height:30px;
+    width:60px;
+}
+select{
+    margin: 5px 5px 0 0;
+}
+#desOrden{
+    color:#000000;
+    font-size:25px;
+}
+
+
