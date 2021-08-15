@@ -1,18 +1,13 @@
 <?php
-    $host    = "localhost";
-    $user    = "root";
-    $pass    = "";
-    $db_name = "lavado_autos";
-
-    //create connection
-    $connection = mysqli_connect($host, $user,$pass, $db_name);
+    include("../conexion.php");
+    
     $id = $_GET["id"];
     $usuarios = "select * from empleado where em_id = '$id'";
-    mysqli_query($connection,$usuarios);
+    mysqli_query($con,$usuarios);
 ?>
 <form action="../pages/EditarEliminarReg/procesarEmp.php" method="POST">
 
-    <?php $resultado = mysqli_query($connection,$usuarios);
+    <?php $resultado = mysqli_query($con,$usuarios);
     while($row = mysqli_fetch_assoc($resultado)) { ?>
         <input type="hidden"    name="id"             value="<?php echo $row["EM_ID"]; ?>">
         <input type="text"      name="EM_NOMBRE"      value="<?php echo $row["EM_NOMBRE"]; ?>">

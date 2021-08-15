@@ -1,11 +1,5 @@
 <?php
-    $user = "root";
-    $pass = "";
-    $host = "localhost";
-    $db = "lavado_autos";
-
-    $con = mysqli_connect($host,$user,$pass);
-    mysqli_select_db ($con,$db);
+    include("../../conexion.php");
 
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){

@@ -1,10 +1,6 @@
 <?php
-    $user = "root";
-    $pass = "";
-    $host = "localhost";
-    $db = "lavado_autos";
-
-    $con = mysqli_connect($host,$user,$pass,$db);
+    include("../../conexion.php");
+    
     $sql="SELECT count(SER_NOMBRE) as numero, SER_NOMBRE as nombre
     FROM Servicio 
     GROUP BY SER_NOMBRE

@@ -1,18 +1,14 @@
 <?php
-    $host    = "localhost";
-    $user    = "root";
-    $pass    = "";
-    $db_name = "lavado_autos";
+    include("../conexion.php");
 
-    //create connection
-    $connection = mysqli_connect($host, $user,$pass, $db_name);
+    //create con
     $id = $_GET["id"];
     $usuarios = "select AU_PLACA,CLI_CEDULA,AU_MARCA,AU_MODELO,AU_ESTADO from autos where AU_PLACA = '$id'";
-    mysqli_query($connection,$usuarios);
+    mysqli_query($con,$usuarios);
 ?>
 <form action="../pages/EditarEliminarReg/procesarAut.php" method="POST">
 
-    <?php $resultado = mysqli_query($connection,$usuarios);
+    <?php $resultado = mysqli_query($con,$usuarios);
     while($row = mysqli_fetch_assoc($resultado)) { ?>
         <input type="text"      name="id"             value="<?php echo $row["AU_PLACA"]; ?>">
         <input type="text"      name="CLI_CEDULA"     value="<?php echo $row["CLI_CEDULA"]; ?>">

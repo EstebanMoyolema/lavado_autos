@@ -1,10 +1,6 @@
 <?php
-    $user = "root";
-    $pass = "";
-    $host = "localhost";
-    $db = "lavado_autos";
-
-    $con = mysqli_connect($host,$user,$pass,$db);
+    include("../../conexion.php");
+    
     $sql="SELECT count(servicio.CLI_CEDULA) as cliente, cliente.CLI_NOMBRE as nombre
     FROM Servicio join cliente
     on servicio.CLI_CEDULA = cliente.CLI_CEDULA

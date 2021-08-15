@@ -1,13 +1,9 @@
 <?php
-    $host    = "localhost";
-    $user    = "root";
-    $pass    = "";
-    $db_name = "lavado_autos";
-    $connection = mysqli_connect($host, $user,$pass, $db_name);
+    include("../../conexion.php");
 
     $id=$_GET['id'];
     $eliminar = "DELETE FROM cliente WHERE cli_cedula='$id'";
-    $resultado = mysqli_query($connection,$eliminar);
+    $resultado = mysqli_query($con,$eliminar);
 
 
     if($resultado){

@@ -1,10 +1,5 @@
 <?php
-    $user = "root";
-    $pass = "";
-    $host = "localhost";
-    $db = "lavado_autos";
-
-    $con = mysqli_connect($host,$user,$pass,$db);
+    include("../../conexion.php");
     $sql="SELECT count(servicio.EM_ID) as empleado, empleado.EM_NOMBRE as nombre
     FROM Servicio inner join empleado
     on servicio.EM_ID = empleado.EM_ID
